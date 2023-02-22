@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;600&display=swap');
+* {
+   box-sizing: border-box;
+   font-family: 'Red Hat Display', sans-serif;
+}
+body {
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1440' height='437'%3E%3Cpath fill='%23D6E1FF' fill-rule='evenodd' d='M0 349.974c218.558 116.035 460.05 116.035 724.475 0s502.933-116.035 715.525 0V0H0v349.974z'/%3E%3C/svg%3E");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-color:  hsl(225, 100%, 94%);
+   height: 100vh;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.box-summary {
+    border-radius: 4%;
+    background-color: white;
+    max-width:360px ; 
+}
+.box-summary  img{
+    border-top-right-radius:4% ;
+    border-top-left-radius:4%;
+    max-width:100%;
+    min-height: 25%
+}
+
+.box-summary .summary-info {
+   text-align: center;
+   margin :4%
+}
+.box-summary .summary-info h3 {
+    text-transform: capitalize;
+    font-family:  'sans-serif',Helvetica;
+    font-weight: 900
+ }
+ .box-summary .summary-info p {
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+    font-size: 0.9375em;
+ }
+ .box-summary .order-summary-item {
+      display: flex;
+      flex-direction: row;
+      margin: 8%;
+      background-color: hsl(225, 100%, 94%);
+      border-radius:4%;
+      padding: 2%;
+     
+ }
+ .box-summary .order-summary-item img{
+   max-height: 50px;
+   max-width: 50px;
+   align-self:center   
+}
+.box-summary .order-summary-item .content-item h3{
+    font-size: 0.9375em;
+    
+ }
+.box-summary .order-summary-item .content-item p{
+    margin-top: -5%;
+    
+ }
+ .box-summary .order-summary-item .link-item{
+    align-self: center;
+    flex-grow: 2; 
+ }
+ .box-summary .summary-info .order-summary-item .link-item a{
+   font-weight: 700;
+   font-family: sans-serif;
+   color: hsl(245, 75%, 52%);
+   transition: all .3s ease-in-out;
+
+ }
+ .box-summary .summary-info .order-summary-item .link-item a:hover{
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+
+ }
+ .box-summary .summary-info .link {
+    max-width: 278px;
+    max-height: 70px;
+    text-align:center;
+}
+.box-summary .summary-info .link:nth-last-of-type(2){
+   background-color: hsl(245, 75%, 52%);
+   border-radius: 5%;
+   padding: 3%;
+   margin: 8%;
+   -webkit-box-shadow: 3px 10px 10px 8px #ebe5e5;
+}
+.box-summary .summary-info .link:last-of-type{
+   background-color: transparent;
+   margin: 8%;
+}
+.box-summary .summary-info .link a{
+   text-decoration: none;
+   font-family:  sans-serif,'Red Hat Display';
+   font-weight: 700;
+   max-width: 100%;
+   transition: all .3s ease-in-out
+}
+.box-summary .summary-info .link:nth-last-of-type(2) a{
+   color: white;
+}
+.box-summary .summary-info .link:last-of-type a{
+   color: #888;
+}
+.box-summary .summary-info .link:nth-last-of-type(2):hover,
+.box-summary .summary-info .link:last-of-type a:hover{
+  opacity: 0.8;
+}
+.box-summary .summary-info .link:last-of-type a:hover{
+   color:hsl(223, 47%, 23%);
+}
